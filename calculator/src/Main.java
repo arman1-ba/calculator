@@ -41,6 +41,7 @@ public class Main {
     }
 
     private static void calwin() {
+
         JFrame frame = new JFrame("Calculator");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(370, 400);
@@ -98,6 +99,9 @@ public class Main {
         frame.getContentPane().add(button10);
         frame.getContentPane().add(button11);
         frame.getContentPane().add(button12);
+
+        Container con = frame.getContentPane();
+        con.setLayout(null);
 
         button.addActionListener(new ListenerAction());
         button1.addActionListener(new ListenerAction());
