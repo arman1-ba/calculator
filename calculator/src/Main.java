@@ -19,7 +19,7 @@ public class Main {
         num1 = input.nextInt();
         System.out.println("enter second number");
         num2 = input.nextInt();
-        System.out.println("What operation?");
+        System.out.println("what operation?");
         operator = input.next().charAt(0);
 
         switch (operator) {
@@ -48,51 +48,39 @@ public class Main {
         JButton button = new JButton("+");
           button.setSize(65, 60);
           button.setLocation(5,50);
-
         JButton button1 = new JButton("-");
           button1.setSize(65, 60);
           button1.setLocation(75,50);
-
         JButton button2 = new JButton("X");
           button2.setSize(65, 60);
           button2.setLocation(145,50);
-
         JButton button3 = new JButton("/");
           button3.setSize(65, 60);
           button3.setLocation(215,50);
-
         JButton button4 = new JButton("DEL");
           button4.setSize(65, 60);
           button4.setLocation(285,50);
-
         JButton button5 = new JButton("%");
           button5.setSize(65, 60);
           button5.setLocation(5,115);
-
         JButton button6 = new JButton(".");
           button6.setSize(65, 60);
           button6.setLocation(75,115);
-
         JButton button7 = new JButton("1");
           button7.setSize(65, 60);
           button7.setLocation(145,115);
-
         JButton button8 = new JButton("2");
           button8.setSize(65, 60);
           button8.setLocation(215,115);
-
         JButton button9 = new JButton("3");
           button9.setSize(65, 60);
           button9.setLocation(285,115);
-
         JButton button10 = new JButton("(");
           button10.setSize(65, 60);
           button10.setLocation(5,180);
-
         JButton button11 = new JButton(")");
           button11.setSize(65, 60);
           button11.setLocation(75,180);
-
         JButton button12 = new JButton("sin");
           button12.setSize(65, 60);
           button12.setLocation(145,180);
