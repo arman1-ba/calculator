@@ -44,47 +44,76 @@ public class Main {
 
         JFrame frame = new JFrame("Calculator");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setSize(370, 400);
+        frame.setSize(370, 360);
 
         JButton button = new JButton("+");
           button.setSize(65, 60);
-          button.setLocation(5,50);
+          button.setLocation(5,60);
         JButton button1 = new JButton("-");
           button1.setSize(65, 60);
-          button1.setLocation(75,50);
+          button1.setLocation(75,60);
         JButton button2 = new JButton("X");
           button2.setSize(65, 60);
-          button2.setLocation(145,50);
+          button2.setLocation(145,60);
         JButton button3 = new JButton("/");
           button3.setSize(65, 60);
-          button3.setLocation(215,50);
+          button3.setLocation(215,60);
         JButton button4 = new JButton("DEL");
           button4.setSize(65, 60);
-          button4.setLocation(285,50);
-        JButton button5 = new JButton("%");
+          button4.setLocation(285,60);
+
+
+        JButton button5 = new JButton("(");
           button5.setSize(65, 60);
-          button5.setLocation(5,115);
-        JButton button6 = new JButton(".");
+          button5.setLocation(5,125);
+        JButton button6 = new JButton(")");
           button6.setSize(65, 60);
-          button6.setLocation(75,115);
+          button6.setLocation(75,125);
         JButton button7 = new JButton("1");
           button7.setSize(65, 60);
-          button7.setLocation(145,115);
+          button7.setLocation(145,125);
         JButton button8 = new JButton("2");
           button8.setSize(65, 60);
-          button8.setLocation(215,115);
+          button8.setLocation(215,125);
         JButton button9 = new JButton("3");
           button9.setSize(65, 60);
-          button9.setLocation(285,115);
-        JButton button10 = new JButton("(");
+          button9.setLocation(285,125);
+
+
+        JButton button10 = new JButton("%");
           button10.setSize(65, 60);
-          button10.setLocation(5,180);
-        JButton button11 = new JButton(")");
+          button10.setLocation(5,190);
+        JButton button11 = new JButton("+/-");
           button11.setSize(65, 60);
-          button11.setLocation(75,180);
-        JButton button12 = new JButton("sin");
+          button11.setLocation(75,190);
+        JButton button12 = new JButton("4");
           button12.setSize(65, 60);
-          button12.setLocation(145,180);
+          button12.setLocation(145,190);
+        JButton button13 = new JButton("5");
+          button13.setSize(65, 60);
+          button13.setLocation(215,190);
+        JButton button14 = new JButton("6");
+          button14.setSize(65, 60);
+          button14.setLocation(285,190);
+
+
+        JButton button15 = new JButton("sin");
+          button15.setSize(65, 60);
+          button15.setLocation(5,255);
+        JButton button16 = new JButton("cos");
+          button16.setSize(65, 60);
+          button16.setLocation(75,255);
+        JButton button17 = new JButton("7");
+          button17.setSize(65, 60);
+          button17.setLocation(145,255);
+        JButton button18 = new JButton("8");
+          button18.setSize(65, 60);
+          button18.setLocation(215,255);
+        JButton button19 = new JButton("9");
+          button19.setSize(65, 60);
+          button1.setLocation(285,255);
+
+
 
         frame.getContentPane().add(button);
         frame.getContentPane().add(button1);
@@ -99,9 +128,16 @@ public class Main {
         frame.getContentPane().add(button10);
         frame.getContentPane().add(button11);
         frame.getContentPane().add(button12);
+        frame.getContentPane().add(button13);
+        frame.getContentPane().add(button14);
+        frame.getContentPane().add(button15);
+        frame.getContentPane().add(button16);
+        frame.getContentPane().add(button17);
+        frame.getContentPane().add(button18);
+        frame.getContentPane().add(button19);
 
-        Container con = frame.getContentPane();
-        con.setLayout(null);
+        Container con = frame.getContentPane(); // чтобы последняя кнопка,
+        con.setLayout(null); // не закрывала остальные
 
         button.addActionListener(new ListenerAction());
         button1.addActionListener(new ListenerAction());
@@ -116,6 +152,13 @@ public class Main {
         button10.addActionListener(new ListenerAction());
         button11.addActionListener(new ListenerAction());
         button12.addActionListener(new ListenerAction());
+        button13.addActionListener(new ListenerAction());
+        button14.addActionListener(new ListenerAction());
+        button15.addActionListener(new ListenerAction());
+        button16.addActionListener(new ListenerAction());
+        button17.addActionListener(new ListenerAction());
+        button18.addActionListener(new ListenerAction());
+        button19.addActionListener(new ListenerAction());
 
         frame.setVisible(true);
 
