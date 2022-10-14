@@ -62,7 +62,7 @@ public class Main {
         JTextField text = new JTextField();
         JFrame frame = new JFrame("Calculator");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setSize(370, 360);
+        frame.setSize(370, 430);
         frame.setResizable(false); // размер кона статичный
         frame.setVisible(true);
 
@@ -119,12 +119,12 @@ public class Main {
 
 
 
-        JButton buttonEquals = new JButton("=");
-                buttonEquals.setSize(65, 60);
-                buttonEquals.setLocation(5, 255);
-        JButton button0 = new JButton("0");
-                button0.setSize(65, 60);
-                button0.setLocation(75, 255);
+        JButton buttonSin = new JButton("sin");
+                buttonSin.setSize(65, 60);
+                buttonSin.setLocation(5, 255);
+        JButton buttonSqrt = new JButton("\u221A");
+                buttonSqrt.setSize(65, 60);
+                buttonSqrt.setLocation(75, 255);
         JButton button7 = new JButton("7");
                 button7.setSize(65, 60);
                 button7.setLocation(145, 255);
@@ -134,6 +134,22 @@ public class Main {
         JButton button9 = new JButton("9");
                 button9.setSize(65, 60);
                 button9.setLocation(285, 255);
+
+        JButton buttonCos = new JButton("cos");
+                buttonCos.setSize(65, 60);
+                buttonCos.setLocation(5, 320);
+        JButton buttonEqual = new JButton("=");
+                buttonEqual.setSize(65, 60);
+                buttonEqual.setLocation(75, 320);
+        JButton buttonComma = new JButton(",");
+                buttonComma.setSize(65, 60);
+                buttonComma.setLocation(145, 320);
+        JButton button0 = new JButton("0");
+                button0.setSize(65, 60);
+                button0.setLocation(215, 320);
+        JButton buttonPlusDivMinus = new JButton("+/-");
+                buttonPlusDivMinus.setSize(65, 60);
+                buttonPlusDivMinus.setLocation(285, 320);
 
 
 
@@ -152,11 +168,17 @@ public class Main {
         frame.getContentPane().add(button4);
         frame.getContentPane().add(button5);
         frame.getContentPane().add(button6);
-        frame.getContentPane().add(buttonEquals);
-        frame.getContentPane().add(button0);
+        frame.getContentPane().add(buttonSin);
+        frame.getContentPane().add(buttonSqrt);
         frame.getContentPane().add(button7);
         frame.getContentPane().add(button8);
         frame.getContentPane().add(button9);
+
+        frame.getContentPane().add(buttonCos);
+        frame.getContentPane().add(buttonEqual);
+        frame.getContentPane().add(buttonComma);
+        frame.getContentPane().add(button0);
+        frame.getContentPane().add(buttonPlusDivMinus);
 
         Container con = frame.getContentPane(); // чтобы последняя кнопка,
         con.setLayout(null); // не закрывала остальные
@@ -209,11 +231,11 @@ public class Main {
         button6.addActionListener(new ListenerAction());
         button6.setFont(new Font("Bookman Old Style", Font.BOLD, 20));
 
-        buttonEquals.addActionListener(new ListenerAction());
-        buttonEquals.setFont(new Font("Bookman Old Style", Font.BOLD, 25));
+        buttonSin.addActionListener(new ListenerAction());
+        buttonSin.setFont(new Font("Bookman Old Style", Font.BOLD, 20));
 
-        button0.addActionListener(new ListenerAction());
-        button0.setFont(new Font("Bookman Old Style", Font.BOLD, 20));
+        buttonSqrt.addActionListener(new ListenerAction());
+        buttonSqrt.setFont(new Font("Bookman Old Style", Font.BOLD, 20));
 
         button7.addActionListener(new ListenerAction());
         button7.setFont(new Font("Bookman Old Style", Font.BOLD, 20));
@@ -223,6 +245,21 @@ public class Main {
 
         button9.addActionListener(new ListenerAction());
         button9.setFont(new Font("Bookman Old Style", Font.BOLD, 20));
+
+        buttonCos.addActionListener(new ListenerAction());
+        buttonCos.setFont(new Font("Bookman Old Style", Font.BOLD, 18));
+
+        buttonEqual.addActionListener(new ListenerAction());
+        buttonEqual.setFont(new Font("Bookman Old Style", Font.BOLD, 20));
+
+        buttonComma.addActionListener(new ListenerAction());
+        buttonComma.setFont(new Font("Bookman Old Style", Font.BOLD, 20));
+
+        button0.addActionListener(new ListenerAction());
+        button0.setFont(new Font("Bookman Old Style", Font.BOLD, 20));
+
+        buttonPlusDivMinus.addActionListener(new ListenerAction());
+        buttonPlusDivMinus.setFont(new Font("Bookman Old Style", Font.BOLD, 20));
 
         text.setFont(new Font("Arial", Font.BOLD, 36));
         text.setBounds(145, 10, 205, 45);
