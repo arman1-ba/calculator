@@ -17,9 +17,6 @@ import javax.script.ScriptEngineManager;
 import javax.script.ScriptException;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
-
-
-
 import javax.swing.SwingConstants;
 
 public class Main {
@@ -135,6 +132,7 @@ public class Main {
                 button9.setSize(65, 60);
                 button9.setLocation(285, 255);
 
+
         JButton buttonCos = new JButton("cos");
                 buttonCos.setSize(65, 60);
                 buttonCos.setLocation(5, 320);
@@ -173,12 +171,12 @@ public class Main {
         frame.getContentPane().add(button7);
         frame.getContentPane().add(button8);
         frame.getContentPane().add(button9);
-
         frame.getContentPane().add(buttonCos);
         frame.getContentPane().add(buttonEqual);
         frame.getContentPane().add(buttonComma);
         frame.getContentPane().add(button0);
         frame.getContentPane().add(buttonPlusDivMinus);
+
 
         Container con = frame.getContentPane(); // чтобы последняя кнопка,
         con.setLayout(null); // не закрывала остальные
@@ -268,7 +266,8 @@ public class Main {
         frame.add(text);
 
     }
-
+// ХЗ КАК ЭТО ДОЛЖНО РАБОТАТЬ
+    
 //        KeyboardFocusManager manager = KeyboardFocusManager.getCurrentKeyboardFocusManager();
 //        manager.addKeyEventDispatcher((KeyEventDispatcher) new KeyDispatcher());
 
@@ -289,7 +288,6 @@ public class Main {
 //        return false;
 //    }
 //}
-
 
     static class ListenerAction implements ActionListener {
         @Override
