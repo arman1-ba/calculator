@@ -45,6 +45,8 @@ public class Main {
         JFrame frame = new JFrame("Calculator");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(370, 360);
+        frame.setResizable(false); // размер кона статичный
+        frame.setVisible(true);
 
         JButton button = new JButton("+");
           button.setSize(65, 60);
@@ -160,7 +162,6 @@ public class Main {
         button18.addActionListener(new ListenerAction());
         button19.addActionListener(new ListenerAction());
 
-        frame.setVisible(true);
 
     }
 
