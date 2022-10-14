@@ -4,9 +4,26 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.Scanner;
 import java.awt.*;
-import javax.swing.*;
+import java.awt.KeyEventDispatcher;
+import java.awt.event.KeyEvent;
+import java.awt.KeyboardFocusManager;
+import javax.swing.JTextField;
+import javax.swing.JFrame;
+import java.awt.Color;
+import java.awt.Font;
+import java.awt.Insets;
+import javax.script.ScriptEngine;
+import javax.script.ScriptEngineManager;
+import javax.script.ScriptException;
+import javax.swing.ImageIcon;
+import javax.swing.JButton;
+
+
+
+import javax.swing.SwingConstants;
 
 public class Main {
+
     public static void main(String[] args) {
         int num1;
         int num2;
@@ -42,79 +59,80 @@ public class Main {
 
     private static void calwin() {
 
+        JTextField text = new JTextField();
         JFrame frame = new JFrame("Calculator");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(370, 360);
         frame.setResizable(false); // размер кона статичный
         frame.setVisible(true);
 
+
         JButton button = new JButton("+");
-          button.setSize(65, 60);
-          button.setLocation(5,60);
+        button.setSize(65, 60);
+        button.setLocation(5, 60);
         JButton button1 = new JButton("-");
-          button1.setSize(65, 60);
-          button1.setLocation(75,60);
-        JButton button2 = new JButton("X");
-          button2.setSize(65, 60);
-          button2.setLocation(145,60);
-        JButton button3 = new JButton("/");
-          button3.setSize(65, 60);
-          button3.setLocation(215,60);
+        button1.setSize(65, 60);
+        button1.setLocation(75, 60);
+        JButton button2 = new JButton("%");
+        button2.setSize(65, 60);
+        button2.setLocation(145, 60);
+        JButton button3 = new JButton("CLE");
+        button3.setSize(65, 60);
+        button3.setLocation(215, 60);
         JButton button4 = new JButton("DEL");
-          button4.setSize(65, 60);
-          button4.setLocation(285,60);
+        button4.setSize(65, 60);
+        button4.setLocation(285, 60);
 
 
-        JButton button5 = new JButton("(");
-          button5.setSize(65, 60);
-          button5.setLocation(5,125);
-        JButton button6 = new JButton(")");
-          button6.setSize(65, 60);
-          button6.setLocation(75,125);
+        JButton button5 = new JButton("X");
+        button5.setSize(65, 60);
+        button5.setLocation(5, 125);
+        JButton button6 = new JButton("/");
+        button6.setSize(65, 60);
+        button6.setLocation(75, 125);
         JButton button7 = new JButton("1");
-          button7.setSize(65, 60);
-          button7.setLocation(145,125);
+        button7.setSize(65, 60);
+        button7.setLocation(145, 125);
         JButton button8 = new JButton("2");
-          button8.setSize(65, 60);
-          button8.setLocation(215,125);
+        button8.setSize(65, 60);
+        button8.setLocation(215, 125);
         JButton button9 = new JButton("3");
-          button9.setSize(65, 60);
-          button9.setLocation(285,125);
+        button9.setSize(65, 60);
+        button9.setLocation(285, 125);
 
 
-        JButton button10 = new JButton("%");
-          button10.setSize(65, 60);
-          button10.setLocation(5,190);
-        JButton button11 = new JButton("+/-");
-          button11.setSize(65, 60);
-          button11.setLocation(75,190);
+        JButton button10 = new JButton("(");
+        button10.setSize(65, 60);
+        button10.setLocation(5, 190);
+        JButton button11 = new JButton(")");
+        button11.setSize(65, 60);
+        button11.setLocation(75, 190);
         JButton button12 = new JButton("4");
-          button12.setSize(65, 60);
-          button12.setLocation(145,190);
+        button12.setSize(65, 60);
+        button12.setLocation(145, 190);
         JButton button13 = new JButton("5");
-          button13.setSize(65, 60);
-          button13.setLocation(215,190);
+        button13.setSize(65, 60);
+        button13.setLocation(215, 190);
         JButton button14 = new JButton("6");
-          button14.setSize(65, 60);
-          button14.setLocation(285,190);
+        button14.setSize(65, 60);
+        button14.setLocation(285, 190);
 
 
         JButton button15 = new JButton("sin");
-          button15.setSize(65, 60);
-          button15.setLocation(5,255);
+        button15.setSize(65, 60);
+        button15.setLocation(5, 255);
         JButton button16 = new JButton("cos");
-          button16.setSize(65, 60);
-          button16.setLocation(75,255);
+        button16.setSize(65, 60);
+        button16.setLocation(75, 255);
         JButton button17 = new JButton("7");
-          button17.setSize(65, 60);
-          button17.setLocation(145,255);
+        button17.setSize(65, 60);
+        button17.setLocation(145, 255);
         JButton button18 = new JButton("8");
-          button18.setSize(65, 60);
-          button18.setLocation(215,255);
+        button18.setSize(65, 60);
+        button18.setLocation(215, 255);
         JButton button19 = new JButton("9");
-          button19.setSize(65, 60);
-          button1.setLocation(285,255);
-
+        button19.setSize(65, 60);
+        button19.setLocation(285, 255);
 
 
         frame.getContentPane().add(button);
@@ -163,7 +181,35 @@ public class Main {
         button19.addActionListener(new ListenerAction());
 
 
+        text.setFont(new Font("Arial", Font.BOLD, 36));
+        text.setBounds(145, 10, 205, 45);
+        text.setBackground(Color.white);
+        text.setHorizontalAlignment(JTextField.RIGHT);
+        frame.add(text);
+
     }
+
+//        KeyboardFocusManager manager = KeyboardFocusManager.getCurrentKeyboardFocusManager();
+//        manager.addKeyEventDispatcher((KeyEventDispatcher) new KeyDispatcher());
+
+//class KeyDispatcher implements KeyEventDispatcher
+//{
+//    public boolean dispatchKeyEvent(KeyEvent e)
+//    {
+//        if (e.getKeyCode() == KeyEvent.VK_ENTER)
+//        {
+//            result();
+//        }
+//
+//        if(e.getKeyCode() == KeyEvent.VK_ESCAPE)
+//        {
+//            text.setText("");
+//        }
+//
+//        return false;
+//    }
+//}
+
 
     static class ListenerAction implements ActionListener {
         @Override
