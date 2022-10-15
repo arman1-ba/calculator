@@ -87,15 +87,15 @@ public class Main {
         JButton buttonDiv = new JButton("/");
                 buttonDiv.setSize(65, 60);
                 buttonDiv.setLocation(75, 125);
-        JButton button1 = new JButton("1");
-                button1.setSize(65, 60);
-                button1.setLocation(145, 125);
-        JButton button2 = new JButton("2");
-                button2.setSize(65, 60);
-                button2.setLocation(215, 125);
-        JButton button3 = new JButton("3");
-                button3.setSize(65, 60);
-                button3.setLocation(285, 125);
+        JButton button7 = new JButton("1");
+                button7.setSize(65, 60);
+                button7.setLocation(145, 125);
+        JButton button8 = new JButton("2");
+                button8.setSize(65, 60);
+                button8.setLocation(215, 125);
+        JButton button9 = new JButton("3");
+                button9.setSize(65, 60);
+                button9.setLocation(285, 125);
 
 
         JButton buttonBracketOpen = new JButton("(");
@@ -116,26 +116,26 @@ public class Main {
 
 
 
-        JButton buttonSin = new JButton("sin");
-                buttonSin.setSize(65, 60);
-                buttonSin.setLocation(5, 255);
+        JButton buttonReciprocal = new JButton("1/X");
+                buttonReciprocal.setSize(65, 60);
+                buttonReciprocal.setLocation(5, 255);
         JButton buttonSqrt = new JButton("\u221A");
                 buttonSqrt.setSize(65, 60);
                 buttonSqrt.setLocation(75, 255);
-        JButton button7 = new JButton("7");
-                button7.setSize(65, 60);
-                button7.setLocation(145, 255);
-        JButton button8 = new JButton("8");
-                button8.setSize(65, 60);
-                button8.setLocation(215, 255);
-        JButton button9 = new JButton("9");
-                button9.setSize(65, 60);
-                button9.setLocation(285, 255);
+        JButton button1 = new JButton("1");
+                button1.setSize(65, 60);
+                button1.setLocation(145, 255);
+        JButton button2 = new JButton("2");
+                button2.setSize(65, 60);
+                button2.setLocation(215, 255);
+        JButton button3 = new JButton("3");
+                button3.setSize(65, 60);
+                button3.setLocation(285, 255);
 
 
-        JButton buttonCos = new JButton("cos");
-                buttonCos.setSize(65, 60);
-                buttonCos.setLocation(5, 320);
+        JButton buttonSquare = new JButton("x\u00B2");
+                buttonSquare.setSize(65, 60);
+                buttonSquare.setLocation(5, 320);
         JButton buttonEqual = new JButton("=");
                 buttonEqual.setSize(65, 60);
                 buttonEqual.setLocation(75, 320);
@@ -158,20 +158,20 @@ public class Main {
         frame.getContentPane().add(buttonDelete);
         frame.getContentPane().add(buttonMul);
         frame.getContentPane().add(buttonDiv);
-        frame.getContentPane().add(button1);
-        frame.getContentPane().add(button2);
-        frame.getContentPane().add(button3);
+        frame.getContentPane().add(button7);
+        frame.getContentPane().add(button8);
+        frame.getContentPane().add(button9);
         frame.getContentPane().add(buttonBracketOpen);
         frame.getContentPane().add(buttonBracketClose);
         frame.getContentPane().add(button4);
         frame.getContentPane().add(button5);
         frame.getContentPane().add(button6);
-        frame.getContentPane().add(buttonSin);
+        frame.getContentPane().add(buttonReciprocal);
         frame.getContentPane().add(buttonSqrt);
-        frame.getContentPane().add(button7);
-        frame.getContentPane().add(button8);
-        frame.getContentPane().add(button9);
-        frame.getContentPane().add(buttonCos);
+        frame.getContentPane().add(button1);
+        frame.getContentPane().add(button2);
+        frame.getContentPane().add(button3);
+        frame.getContentPane().add(buttonSquare);
         frame.getContentPane().add(buttonEqual);
         frame.getContentPane().add(buttonComma);
         frame.getContentPane().add(button0);
@@ -205,14 +205,14 @@ public class Main {
         buttonDiv.addActionListener(new ListenerAction());
         buttonDiv.setFont(new Font("Bookman Old Style", Font.BOLD, 25));
 
-        button1.addActionListener(new ListenerAction());
-        button1.setFont(new Font("Bookman Old Style", Font.BOLD, 20));
+        button7.addActionListener(new ListenerAction());
+        button7.setFont(new Font("Bookman Old Style", Font.BOLD, 20));
 
-        button2.addActionListener(new ListenerAction());
-        button2.setFont(new Font("Bookman Old Style", Font.BOLD, 20));
+        button8.addActionListener(new ListenerAction());
+        button8.setFont(new Font("Bookman Old Style", Font.BOLD, 20));
 
-        button3.addActionListener(new ListenerAction());
-        button3.setFont(new Font("Bookman Old Style", Font.BOLD, 20));
+        button9.addActionListener(new ListenerAction());
+        button9.setFont(new Font("Bookman Old Style", Font.BOLD, 20));
 
         buttonBracketOpen.addActionListener(new ListenerAction());
         buttonBracketOpen.setFont(new Font("Bookman Old Style", Font.BOLD, 25));
@@ -229,23 +229,23 @@ public class Main {
         button6.addActionListener(new ListenerAction());
         button6.setFont(new Font("Bookman Old Style", Font.BOLD, 20));
 
-        buttonSin.addActionListener(new ListenerAction());
-        buttonSin.setFont(new Font("Bookman Old Style", Font.BOLD, 20));
+        buttonReciprocal.addActionListener(new ListenerAction());
+        buttonReciprocal.setFont(new Font("Bookman Old Style", Font.BOLD, 15));
 
         buttonSqrt.addActionListener(new ListenerAction());
         buttonSqrt.setFont(new Font("Bookman Old Style", Font.BOLD, 20));
 
-        button7.addActionListener(new ListenerAction());
-        button7.setFont(new Font("Bookman Old Style", Font.BOLD, 20));
+        button1.addActionListener(new ListenerAction());
+        button1.setFont(new Font("Bookman Old Style", Font.BOLD, 20));
 
-        button8.addActionListener(new ListenerAction());
-        button8.setFont(new Font("Bookman Old Style", Font.BOLD, 20));
+        button2.addActionListener(new ListenerAction());
+        button2.setFont(new Font("Bookman Old Style", Font.BOLD, 20));
 
-        button9.addActionListener(new ListenerAction());
-        button9.setFont(new Font("Bookman Old Style", Font.BOLD, 20));
+        button3.addActionListener(new ListenerAction());
+        button3.setFont(new Font("Bookman Old Style", Font.BOLD, 20));
 
-        buttonCos.addActionListener(new ListenerAction());
-        buttonCos.setFont(new Font("Bookman Old Style", Font.BOLD, 18));
+        buttonSquare.addActionListener(new ListenerAction());
+        buttonSquare.setFont(new Font("Bookman Old Style", Font.BOLD, 20));
 
         buttonEqual.addActionListener(new ListenerAction());
         buttonEqual.setFont(new Font("Bookman Old Style", Font.BOLD, 20));
@@ -267,7 +267,7 @@ public class Main {
 
     }
 // ХЗ КАК ЭТО ДОЛЖНО РАБОТАТЬ
-    
+
 //        KeyboardFocusManager manager = KeyboardFocusManager.getCurrentKeyboardFocusManager();
 //        manager.addKeyEventDispatcher((KeyEventDispatcher) new KeyDispatcher());
 
