@@ -87,13 +87,13 @@ public class Main {
         JButton buttonDiv = new JButton("/");
                 buttonDiv.setSize(65, 60);
                 buttonDiv.setLocation(75, 125);
-        JButton button7 = new JButton("1");
+        JButton button7 = new JButton("7");
                 button7.setSize(65, 60);
                 button7.setLocation(145, 125);
-        JButton button8 = new JButton("2");
+        JButton button8 = new JButton("8");
                 button8.setSize(65, 60);
                 button8.setLocation(215, 125);
-        JButton button9 = new JButton("3");
+        JButton button9 = new JButton("9");
                 button9.setSize(65, 60);
                 button9.setLocation(285, 125);
 
