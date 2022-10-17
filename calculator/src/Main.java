@@ -196,18 +196,26 @@ public class Main {
         buttonOpenLogs.setFont(new Font("Bookman Old Style", Font.BOLD, 15));
         buttonSendDataBase.addActionListener(new ListenerAction());
         buttonSendDataBase.setFont(new Font("Bookman Old Style", Font.BOLD, 15));
-        buttonPercent.addActionListener(new ListenerAction());
-        buttonPercent.setFont(new Font("Bookman Old Style", Font.BOLD, 25));
         buttonClear.addActionListener(new ListenerAction());
         buttonClear.setFont(new Font("Bookman Old Style", Font.BOLD, 12));
         buttonDelete.addActionListener(new ListenerAction());
         buttonDelete.setFont(new Font("Bookman Old Style", Font.BOLD, 12));
         buttonDelete.setBackground(new Color(255, 0, 0));
-        buttonMul.addActionListener(new ListenerAction());
 
-        buttonMul.setFont(new Font("Bookman Old Style", Font.BOLD, 15));
+        buttonBracketOpen.addActionListener(new ListenerAction());
+        buttonBracketOpen.setFont(new Font("Bookman Old Style", Font.BOLD, 20));
+        buttonBracketClose.addActionListener(new ListenerAction());
+        buttonBracketClose.setFont(new Font("Bookman Old Style", Font.BOLD, 20));
         buttonDiv.addActionListener(new ListenerAction());
         buttonDiv.setFont(new Font("Bookman Old Style", Font.BOLD, 20));
+        buttonMul.addActionListener(new ListenerAction());
+        buttonMul.setFont(new Font("Bookman Old Style", Font.BOLD, 15));
+        buttonSquare.addActionListener(new ListenerAction());
+        buttonSquare.setFont(new Font("Bookman Old Style", Font.BOLD, 20));
+        buttonPlus.addActionListener(new ListenerAction());
+        buttonPlus.setFont(new Font("Bookman Old Style", Font.BOLD, 20));
+        buttonMinus.addActionListener(new ListenerAction());
+        buttonMinus.setFont(new Font("Bookman Old Style", Font.BOLD, 25));
 
         button0.addActionListener(new ListenerAction());
         button0.setFont(new Font("Bookman Old Style", Font.BOLD, 20));
@@ -230,25 +238,18 @@ public class Main {
         button9.addActionListener(new ListenerAction());
         button9.setFont(new Font("Bookman Old Style", Font.BOLD, 20));
 
-        buttonBracketOpen.addActionListener(new ListenerAction());
-        buttonBracketOpen.setFont(new Font("Bookman Old Style", Font.BOLD, 20));
-        buttonBracketClose.addActionListener(new ListenerAction());
-        buttonBracketClose.setFont(new Font("Bookman Old Style", Font.BOLD, 20));
 
-        buttonMinus.addActionListener(new ListenerAction());
-        buttonMinus.setFont(new Font("Bookman Old Style", Font.BOLD, 25));
-        buttonPlus.addActionListener(new ListenerAction());
-        buttonPlus.setFont(new Font("Bookman Old Style", Font.BOLD, 20));
-        buttonSquare.addActionListener(new ListenerAction());
-        buttonSquare.setFont(new Font("Bookman Old Style", Font.BOLD, 20));
+
+        buttonSqrt.addActionListener(new ListenerAction());
+        buttonSqrt.setFont(new Font("Bookman Old Style", Font.BOLD, 20));
         buttonEqual.addActionListener(new ListenerAction());
         buttonEqual.setFont(new Font("Bookman Old Style", Font.BOLD, 20));
         buttonComma.addActionListener(new ListenerAction());
         buttonComma.setFont(new Font("Bookman Old Style", Font.BOLD, 20));
         buttonPercent.addActionListener(new ListenerAction());
         buttonPercent.setFont(new Font("Bookman Old Style", Font.BOLD, 20));
-        buttonSqrt.addActionListener(new ListenerAction());
-        buttonSqrt.setFont(new Font("Bookman Old Style", Font.BOLD, 20));
+
+
 
         text.setFont(new Font("Arial", Font.BOLD, 36));
         text.setBounds(145, 10, 205, 45);
