@@ -201,7 +201,6 @@ public class Main {
         buttonDelete.addActionListener(new ListenerAction());
         buttonDelete.setFont(new Font("Bookman Old Style", Font.BOLD, 12));
         buttonDelete.setBackground(new Color(255, 0, 0));
-
         buttonBracketOpen.addActionListener(new ListenerAction());
         buttonBracketOpen.setFont(new Font("Bookman Old Style", Font.BOLD, 20));
         buttonBracketClose.addActionListener(new ListenerAction());
@@ -216,7 +215,6 @@ public class Main {
         buttonPlus.setFont(new Font("Bookman Old Style", Font.BOLD, 20));
         buttonMinus.addActionListener(new ListenerAction());
         buttonMinus.setFont(new Font("Bookman Old Style", Font.BOLD, 25));
-
         button0.addActionListener(new ListenerAction());
         button0.setFont(new Font("Bookman Old Style", Font.BOLD, 20));
         button1.addActionListener(new ListenerAction());
@@ -237,9 +235,6 @@ public class Main {
         button8.setFont(new Font("Bookman Old Style", Font.BOLD, 20));
         button9.addActionListener(new ListenerAction());
         button9.setFont(new Font("Bookman Old Style", Font.BOLD, 20));
-
-
-
         buttonSqrt.addActionListener(new ListenerAction());
         buttonSqrt.setFont(new Font("Bookman Old Style", Font.BOLD, 20));
         buttonEqual.addActionListener(new ListenerAction());
