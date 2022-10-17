@@ -144,7 +144,7 @@ public class Main {
                 button3.setLocation(285, 320);
 
 
-        JButton buttonSqrt = new JButton("\u221A");
+        JButton buttonSqrt = new JButton("%");
                 buttonSqrt.setSize(65, 60);
                 buttonSqrt.setLocation(5, 385);
         JButton buttonEqual = new JButton("=");
@@ -156,7 +156,7 @@ public class Main {
         JButton button0 = new JButton("0");
                 button0.setSize(65, 60);
                 button0.setLocation(215, 385);
-        JButton buttonPercent = new JButton("%");
+        JButton buttonPercent = new JButton("\u221A");
                 buttonPercent.setSize(65, 60);
                 buttonPercent.setLocation(285, 385);
 
