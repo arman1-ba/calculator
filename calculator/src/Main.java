@@ -1,4 +1,4 @@
-package Calculator.calculator.src;
+
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -59,20 +59,17 @@ public class Main {
         JTextField text = new JTextField();
         JFrame frame = new JFrame("Calculator");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setSize(370, 430);
-        frame.setResizable(false); // размер кона статичный
+        frame.setSize(370, 490);
+        frame.setResizable(false);
         frame.setVisible(true);
 
 
-        JButton buttonPlus = new JButton("+");
-                buttonPlus.setSize(65, 60);
-                buttonPlus.setLocation(5, 60);
-        JButton buttonMinus = new JButton("-");
-                buttonMinus.setSize(65, 60);
-                buttonMinus.setLocation(75, 60);
-        JButton buttonPercent = new JButton("%");
-                buttonPercent.setSize(65, 60);
-                buttonPercent.setLocation(145, 60);
+        JButton buttonOpenLogs = new JButton("Откр. логи");
+                buttonOpenLogs.setSize(135, 60);
+                buttonOpenLogs.setLocation(5, 60);
+        JButton buttonSquare = new JButton("x²");
+                buttonSquare.setSize(65, 60);
+                buttonSquare.setLocation(145, 60);
         JButton buttonClear = new JButton("CLE");
                 buttonClear.setSize(65, 60);
                 buttonClear.setLocation(215, 60);
@@ -81,21 +78,18 @@ public class Main {
                 buttonDelete.setLocation(285, 60);
 
 
-        JButton buttonMul = new JButton("x");
-                buttonMul.setSize(65, 60);
-                buttonMul.setLocation(5, 125);
-        JButton buttonDiv = new JButton("/");
-                buttonDiv.setSize(65, 60);
-                buttonDiv.setLocation(75, 125);
-        JButton button7 = new JButton("7");
-                button7.setSize(65, 60);
-                button7.setLocation(145, 125);
-        JButton button8 = new JButton("8");
-                button8.setSize(65, 60);
-                button8.setLocation(215, 125);
-        JButton button9 = new JButton("9");
-                button9.setSize(65, 60);
-                button9.setLocation(285, 125);
+        JButton buttonSendDataBase = new JButton("Отпр. в БД");
+                buttonSendDataBase.setSize(135, 60);
+                buttonSendDataBase.setLocation(5, 125);
+//        JButton button = new JButton("");
+//                button.setSize(65, 60);
+//                button.setLocation(145, 125);
+//        JButton button = new JButton("");
+//                button.setSize(65, 60);
+//                button.setLocation(215, 125);
+//        JButton button = new JButton("");
+//                button.setSize(65, 60);
+//                button.setLocation(285, 125);
 
 
         JButton buttonBracketOpen = new JButton("(");
@@ -104,160 +98,157 @@ public class Main {
         JButton buttonBracketClose = new JButton(")");
                 buttonBracketClose.setSize(65, 60);
                 buttonBracketClose.setLocation(75, 190);
+        JButton button7 = new JButton("7");
+                button7.setSize(65, 60);
+                button7.setLocation(145, 190);
+        JButton button8 = new JButton("8");
+                button8.setSize(65, 60);
+                button8.setLocation(215, 190);
+        JButton button9 = new JButton("9");
+                button9.setSize(65, 60);
+                button9.setLocation(285, 190);
+
+
+
+        JButton buttonDiv = new JButton("/");
+                buttonDiv.setSize(65, 60);
+                buttonDiv.setLocation(5, 255);
+        JButton buttonMinus = new JButton("-");
+                buttonMinus.setSize(65, 60);
+                buttonMinus.setLocation(75, 255);
         JButton button4 = new JButton("4");
                 button4.setSize(65, 60);
-                button4.setLocation(145, 190);
+                button4.setLocation(145, 255);
         JButton button5 = new JButton("5");
                 button5.setSize(65, 60);
-                button5.setLocation(215, 190);
+                button5.setLocation(215, 255);
         JButton button6 = new JButton("6");
                 button6.setSize(65, 60);
-                button6.setLocation(285, 190);
+                button6.setLocation(285, 255);
 
 
-
-        JButton buttonReciprocal = new JButton("1/X");
-                buttonReciprocal.setSize(65, 60);
-                buttonReciprocal.setLocation(5, 255);
-        JButton buttonSqrt = new JButton("\u221A");
-                buttonSqrt.setSize(65, 60);
-                buttonSqrt.setLocation(75, 255);
+        JButton buttonMul = new JButton("X");
+                buttonMul.setSize(65, 60);
+                buttonMul.setLocation(5, 320);
+        JButton buttonPlus = new JButton("+");
+                buttonPlus.setSize(65, 60);
+                buttonPlus.setLocation(75, 320);
         JButton button1 = new JButton("1");
                 button1.setSize(65, 60);
-                button1.setLocation(145, 255);
+                button1.setLocation(145, 320);
         JButton button2 = new JButton("2");
                 button2.setSize(65, 60);
-                button2.setLocation(215, 255);
+                button2.setLocation(215, 320);
         JButton button3 = new JButton("3");
                 button3.setSize(65, 60);
-                button3.setLocation(285, 255);
+                button3.setLocation(285, 320);
 
 
-        JButton buttonSquare = new JButton("x\u00B2");
-                buttonSquare.setSize(65, 60);
-                buttonSquare.setLocation(5, 320);
+        JButton buttonSqrt = new JButton("\u221A");
+                buttonSqrt.setSize(65, 60);
+                buttonSqrt.setLocation(5, 385);
         JButton buttonEqual = new JButton("=");
                 buttonEqual.setSize(65, 60);
-                buttonEqual.setLocation(75, 320);
+                buttonEqual.setLocation(75, 385);
         JButton buttonComma = new JButton(",");
                 buttonComma.setSize(65, 60);
-                buttonComma.setLocation(145, 320);
+                buttonComma.setLocation(145, 385);
         JButton button0 = new JButton("0");
                 button0.setSize(65, 60);
-                button0.setLocation(215, 320);
-        JButton buttonPlusDivMinus = new JButton("+/-");
-                buttonPlusDivMinus.setSize(65, 60);
-                buttonPlusDivMinus.setLocation(285, 320);
+                button0.setLocation(215, 385);
+        JButton buttonPercent = new JButton("%");
+                buttonPercent.setSize(65, 60);
+                buttonPercent.setLocation(285, 385);
 
 
 
-        frame.getContentPane().add(buttonPlus);
-        frame.getContentPane().add(buttonMinus);
-        frame.getContentPane().add(buttonPercent);
+        frame.getContentPane().add(buttonOpenLogs);
+        frame.getContentPane().add(buttonSendDataBase);
         frame.getContentPane().add(buttonClear);
         frame.getContentPane().add(buttonDelete);
-        frame.getContentPane().add(buttonMul);
-        frame.getContentPane().add(buttonDiv);
-        frame.getContentPane().add(button7);
-        frame.getContentPane().add(button8);
-        frame.getContentPane().add(button9);
         frame.getContentPane().add(buttonBracketOpen);
         frame.getContentPane().add(buttonBracketClose);
-        frame.getContentPane().add(button4);
-        frame.getContentPane().add(button5);
-        frame.getContentPane().add(button6);
-        frame.getContentPane().add(buttonReciprocal);
-        frame.getContentPane().add(buttonSqrt);
+        frame.getContentPane().add(buttonDiv);
+        frame.getContentPane().add(buttonMul);
+        frame.getContentPane().add(buttonSquare);
+        frame.getContentPane().add(buttonPlus);
+        frame.getContentPane().add(buttonMinus);
+        frame.getContentPane().add(button0);
         frame.getContentPane().add(button1);
         frame.getContentPane().add(button2);
         frame.getContentPane().add(button3);
-        frame.getContentPane().add(buttonSquare);
+        frame.getContentPane().add(button4);
+        frame.getContentPane().add(button5);
+        frame.getContentPane().add(button6);
+        frame.getContentPane().add(button7);
+        frame.getContentPane().add(button8);
+        frame.getContentPane().add(button9);
+        frame.getContentPane().add(buttonSqrt);
         frame.getContentPane().add(buttonEqual);
         frame.getContentPane().add(buttonComma);
-        frame.getContentPane().add(button0);
-        frame.getContentPane().add(buttonPlusDivMinus);
-
+        frame.getContentPane().add(buttonPercent);
 
         Container con = frame.getContentPane(); // чтобы последняя кнопка,
         con.setLayout(null); // не закрывала остальные
 
 
-
-        buttonPlus.addActionListener(new ListenerAction());
-        buttonPlus.setFont(new Font("Bookman Old Style", Font.BOLD, 25));
-
-        buttonMinus.addActionListener(new ListenerAction());
-        buttonMinus.setFont(new Font("Bookman Old Style", Font.BOLD, 25));
-
+        buttonOpenLogs.addActionListener(new ListenerAction());
+        buttonOpenLogs.setFont(new Font("Bookman Old Style", Font.BOLD, 15));
+        buttonSendDataBase.addActionListener(new ListenerAction());
+        buttonSendDataBase.setFont(new Font("Bookman Old Style", Font.BOLD, 15));
         buttonPercent.addActionListener(new ListenerAction());
         buttonPercent.setFont(new Font("Bookman Old Style", Font.BOLD, 25));
-
         buttonClear.addActionListener(new ListenerAction());
         buttonClear.setFont(new Font("Bookman Old Style", Font.BOLD, 12));
-
         buttonDelete.addActionListener(new ListenerAction());
         buttonDelete.setFont(new Font("Bookman Old Style", Font.BOLD, 12));
         buttonDelete.setBackground(new Color(255, 0, 0));
-
         buttonMul.addActionListener(new ListenerAction());
-        buttonMul.setFont(new Font("Bookman Old Style", Font.BOLD, 25));
 
+        buttonMul.setFont(new Font("Bookman Old Style", Font.BOLD, 15));
         buttonDiv.addActionListener(new ListenerAction());
-        buttonDiv.setFont(new Font("Bookman Old Style", Font.BOLD, 25));
+        buttonDiv.setFont(new Font("Bookman Old Style", Font.BOLD, 20));
 
+        button0.addActionListener(new ListenerAction());
+        button0.setFont(new Font("Bookman Old Style", Font.BOLD, 20));
+        button1.addActionListener(new ListenerAction());
+        button1.setFont(new Font("Bookman Old Style", Font.BOLD, 20));
+        button2.addActionListener(new ListenerAction());
+        button2.setFont(new Font("Bookman Old Style", Font.BOLD, 20));
+        button3.addActionListener(new ListenerAction());
+        button3.setFont(new Font("Bookman Old Style", Font.BOLD, 20));
+        button4.addActionListener(new ListenerAction());
+        button4.setFont(new Font("Bookman Old Style", Font.BOLD, 20));
+        button5.addActionListener(new ListenerAction());
+        button5.setFont(new Font("Bookman Old Style", Font.BOLD, 20));
+        button6.addActionListener(new ListenerAction());
+        button6.setFont(new Font("Bookman Old Style", Font.BOLD, 20));
         button7.addActionListener(new ListenerAction());
         button7.setFont(new Font("Bookman Old Style", Font.BOLD, 20));
-
         button8.addActionListener(new ListenerAction());
         button8.setFont(new Font("Bookman Old Style", Font.BOLD, 20));
-
         button9.addActionListener(new ListenerAction());
         button9.setFont(new Font("Bookman Old Style", Font.BOLD, 20));
 
         buttonBracketOpen.addActionListener(new ListenerAction());
-        buttonBracketOpen.setFont(new Font("Bookman Old Style", Font.BOLD, 25));
-
+        buttonBracketOpen.setFont(new Font("Bookman Old Style", Font.BOLD, 20));
         buttonBracketClose.addActionListener(new ListenerAction());
-        buttonBracketClose.setFont(new Font("Bookman Old Style", Font.BOLD, 25));
+        buttonBracketClose.setFont(new Font("Bookman Old Style", Font.BOLD, 20));
 
-        button4.addActionListener(new ListenerAction());
-        button4.setFont(new Font("Bookman Old Style", Font.BOLD, 20));
-
-        button5.addActionListener(new ListenerAction());
-        button5.setFont(new Font("Bookman Old Style", Font.BOLD, 20));
-
-        button6.addActionListener(new ListenerAction());
-        button6.setFont(new Font("Bookman Old Style", Font.BOLD, 20));
-
-        buttonReciprocal.addActionListener(new ListenerAction());
-        buttonReciprocal.setFont(new Font("Bookman Old Style", Font.BOLD, 15));
-
-        buttonSqrt.addActionListener(new ListenerAction());
-        buttonSqrt.setFont(new Font("Bookman Old Style", Font.BOLD, 20));
-
-        button1.addActionListener(new ListenerAction());
-        button1.setFont(new Font("Bookman Old Style", Font.BOLD, 20));
-
-        button2.addActionListener(new ListenerAction());
-        button2.setFont(new Font("Bookman Old Style", Font.BOLD, 20));
-
-        button3.addActionListener(new ListenerAction());
-        button3.setFont(new Font("Bookman Old Style", Font.BOLD, 20));
-
+        buttonMinus.addActionListener(new ListenerAction());
+        buttonMinus.setFont(new Font("Bookman Old Style", Font.BOLD, 25));
+        buttonPlus.addActionListener(new ListenerAction());
+        buttonPlus.setFont(new Font("Bookman Old Style", Font.BOLD, 20));
         buttonSquare.addActionListener(new ListenerAction());
         buttonSquare.setFont(new Font("Bookman Old Style", Font.BOLD, 20));
-
         buttonEqual.addActionListener(new ListenerAction());
         buttonEqual.setFont(new Font("Bookman Old Style", Font.BOLD, 20));
-
         buttonComma.addActionListener(new ListenerAction());
         buttonComma.setFont(new Font("Bookman Old Style", Font.BOLD, 20));
-
-        button0.addActionListener(new ListenerAction());
-        button0.setFont(new Font("Bookman Old Style", Font.BOLD, 20));
-
-        buttonPlusDivMinus.addActionListener(new ListenerAction());
-        buttonPlusDivMinus.setFont(new Font("Bookman Old Style", Font.BOLD, 20));
+        buttonPercent.addActionListener(new ListenerAction());
+        buttonPercent.setFont(new Font("Bookman Old Style", Font.BOLD, 20));
+        buttonSqrt.addActionListener(new ListenerAction());
+        buttonSqrt.setFont(new Font("Bookman Old Style", Font.BOLD, 20));
 
         text.setFont(new Font("Arial", Font.BOLD, 36));
         text.setBounds(145, 10, 205, 45);
